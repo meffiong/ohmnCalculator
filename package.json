@@ -1,0 +1,23 @@
+{
+  "name": "ohmncalculator",
+  "version": "1.0.0",
+  "description": "Calculate resistor codes",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Mandela Effiong",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "*",
+    "flux": "*",
+    "gulp": "*",
+    "jest": "^22.1.4",
+    "jest-cli": "^22.1.4",
+    "reactify": "*"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
