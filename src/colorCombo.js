@@ -3,6 +3,12 @@ function colorCombo(bandAColor, bandBColor, bandCColor, bandDColor){
 	var b;
 	var d;
 
+	var round = {
+		round: function(value, decimals) {
+	  		return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+		}
+	}
+
 	switch(bandAColor){
 		case 'black':
 			a = "0";
@@ -156,7 +162,8 @@ function colorCombo(bandAColor, bandBColor, bandCColor, bandDColor){
 			break;
 	}
 
-	return value;
+	return (round.round(value, 3));
+
 
 }
 

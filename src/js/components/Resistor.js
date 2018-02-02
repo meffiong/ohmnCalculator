@@ -15,8 +15,12 @@ var Resistor = React.createClass({
 							<span className="ohmValue">{this.props.value[1]} - </span>
 							<span className="ohmValue">{this.props.value[2]}</span>
 						</div>
-					</div>	
-					<button className="btn btn-primary" onClick={this.onClick}>Calculate</button>
+					</div>
+					<div className="calculateConfirm">
+						<image src={'images/indicate.png'} className="leftArrow indicatorArrows" alt="arrow" />
+						<image src={'images/indicate-r.png'} className="rightArrow indicatorArrows" alt="arrow" />
+						<button className="btn btn-primary" onClick={this.onClick}>Calculate</button>
+					</div>
 				</div>
 			);//
 		}else{
@@ -24,8 +28,12 @@ var Resistor = React.createClass({
 				<div>
 					<div className="resistor">
 						<h2 className="ohmValue"></h2>
-					</div>	
-					<button className="btn btn-primary" onClick={this.onClick}>Calculate</button>
+					</div>
+					<div className="calculateConfirm">
+						<image src={'images/indicate.png'} className="leftArrow indicatorArrows" alt="arrow" />
+						<image src={'images/indicate-r.png'} className="rightArrow indicatorArrows" alt="arrow" />
+						<button className="btn btn-primary" onClick={this.onClick}>Calculate</button>
+					</div>
 				</div>
 			);
 		}

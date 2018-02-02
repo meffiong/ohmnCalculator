@@ -12,6 +12,7 @@ var Calculator = React.createClass({
 				<label>Sig Fig 2</label> <ColorSelect colorID="2" changeColor={this.props.changeColor} />
 				<label>Multiplier</label> <ColorSelect colorID="3" changeColor={this.props.changeColor} />
 				<label>Tolerance</label> <ColorSelect colorID="4" changeColor={this.props.changeColor} />
+				<div className="instructions"></div>
 			</div>
 		);
 	}

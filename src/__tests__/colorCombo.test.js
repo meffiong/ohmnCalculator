@@ -2,7 +2,7 @@ const colorCombo = require('../colorCombo')
 const testUpperValue = require('../testUpperValue')
 const testLowerValue = require('../testLowerValue')
 
-test('Decodes numerical values of color combonations', () => {
+test('Decodes numerical values of resistor color combinations', () => {
 	expect(colorCombo('yellow','violet','red','gold')).toBe(4700);
 	expect(colorCombo('red','violet','red','gold')).toBe(2700);
 	expect(colorCombo('brown','orange','brown','orange')).toBe(130);
@@ -15,7 +15,7 @@ test('Decodes numerical values of color combonations', () => {
 	expect(colorCombo('blue','green','silver','black')).toBe(.65);
 })
 
-test('Decodes numerical values of color combonations', () => {
+test('Decodes numerical lower end values of resistor band color combinations', () => {
 	expect(testUpperValue('yellow','violet','red','gold')).toBe(4935);
 	expect(testUpperValue('red','violet','red','gold')).toBe(2835);
 	expect(testUpperValue('brown','orange','brown','orange')).toBe(156);
@@ -28,7 +28,7 @@ test('Decodes numerical values of color combonations', () => {
 	expect(testUpperValue('blue','green','silver','black')).toBe(.78);
 })
 
-test('Decodes numerical values of color combonations', () => {
+test('Decodes numerical upper end values of resistor band color combinations', () => {
 	expect(testLowerValue('yellow','violet','red','gold')).toBe(4465);
 	expect(testLowerValue('red','violet','red','gold')).toBe(2565);
 	expect(testLowerValue('brown','orange','brown','orange')).toBe(104);

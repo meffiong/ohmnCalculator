@@ -18,6 +18,34 @@
    		   		$(this).parent().find('div.color').removeClass('selected');
    		   		$(this).addClass('selected');
    		   });
+
+
+   		   	function animateArrows(){
+	   		   $('.leftArrow').animate({right: "99%"}, 300);
+	   		   $('.leftArrow').animate({right: "108%"}, 300);
+
+	   		   $('.rightArrow').animate({left: "99%"}, 300);
+	   		   $('.rightArrow').animate({left: "108%"}, 300);
+	   		}
+
+	   		var start = true;
+
+	   		$('.color').click(function(){
+	   			var color1 = $('.selector .selected');
+
+	   			if(color1.length == 4 && start){
+	   				$('.indicatorArrows').stop(true,true).fadeIn();
+	   				setInterval(animateArrows, 600);
+	   				start = false;
+	   			}
+	   		});
+
+	   		$('button').click(function(){
+	   			$('.indicatorArrows').stop(true,true).fadeOut();
+	   			start = true;
+	   		})
+
+
    		 })
 	</script>
 </body>
