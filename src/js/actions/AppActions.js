@@ -4,7 +4,6 @@ var AppActions = {
 	  return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 	},
 	calculateOhmValue: function(bandAColor, bandBColor, bandCColor, bandDColor){
-		console.log(bandAColor + ' ' + bandBColor + ' ' + bandCColor + ' ' + bandDColor);
 		var a;
 		var b;
 		var d;
@@ -164,7 +163,6 @@ var AppActions = {
 
 		if(a !== undefined && b !== undefined){
 			values = [ this.round(value,3), this.round(Number(value) - d, 3), this.round(Number(value) + d, 3) ]
-			console.log( this.round((value - d), 3) + ' - ' + this.round((value + d), 3) );
 			return values;
 		}else{
 			return 'Select a value';

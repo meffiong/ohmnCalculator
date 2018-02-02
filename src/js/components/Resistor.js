@@ -5,7 +5,6 @@ var AppActions = require('../actions/AppActions');
 var Resistor = React.createClass({
 
 	render: function(){
-		console.log(this.props.value);
 		if(Array.isArray(this.props.value)){
 			return(
 				<div>
@@ -22,7 +21,7 @@ var Resistor = React.createClass({
 						<button className="btn btn-primary" onClick={this.onClick}>Calculate</button>
 					</div>
 				</div>
-			);//
+			);
 		}else{
 			return(
 				<div>
@@ -39,7 +38,7 @@ var Resistor = React.createClass({
 		}
 		
 	},
-//
+
 	onClick: function(){
 		value = AppActions.calculateOhmValue(this.props.bandColor1, this.props.bandColor2, this.props.bandColor3, this.props.bandColor4);
 		this.props.setValue(value);
